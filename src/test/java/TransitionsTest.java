@@ -9,12 +9,11 @@ public class TransitionsTest {
     private WebDriver driver;
     private final String email = SetTestClass.email;
     private final String pass = SetTestClass.password;
-    private String token;
 
     @Before
     public void setup() {
         driver = SetWebDriver.setupDriver();
-        token = SetTestClass.createUser();
+        SetTestClass.createUser();
     }
 
     @Test
